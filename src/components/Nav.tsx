@@ -1,18 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ItemType } from '../types';
+import { getCartItems } from '../utils';
 
 const Nav = () => {
   const [showCart, setShowCart] = useState(false);
   const [items, setItems] = useState([] as ItemType[]);
-
-  function getCartItems() {
-    const cart = localStorage.getItem('cart');
-
-    if (cart) {
-      setItems(JSON.parse(cart));
-    }
-  }
 
   return (
     <>
@@ -23,7 +16,7 @@ const Nav = () => {
         <button
           className="text-lg font-bold underline py-4"
           onClick={() => {
-            getCartItems();
+            setItems(getCartItems());
             setShowCart(!showCart);
           }}
         >
