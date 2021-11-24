@@ -6,8 +6,8 @@ import Checkout from './views/Checkout';
 const App = () => {
   return (
     <div className="container mx-auto relative">
-      <Nav />
       <Router>
+        <Nav />
         <Routes>
           <Route path="/" element={<Listings />} />
           <Route path="/checkout" element={<Checkout />} />

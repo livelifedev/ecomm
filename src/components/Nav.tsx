@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ItemType } from '../types';
 
 const Nav = () => {
@@ -16,7 +17,9 @@ const Nav = () => {
   return (
     <>
       <div className="flex justify-between">
-        <a className="text-lg font-bold py-4">Home</a>
+        <Link to="/" className="text-lg font-bold py-4">
+          Home
+        </Link>
         <button
           className="text-lg font-bold underline py-4"
           onClick={() => {
@@ -39,9 +42,12 @@ const Nav = () => {
             ))}
           </ul>
 
-          <a className="text-lg font-bold py-4 absolute bottom-0 right-6">
+          <Link
+            to="/checkout"
+            className="text-lg font-bold py-4 absolute bottom-0 right-6"
+          >
             Checkout
-          </a>
+          </Link>
         </div>
       )}
     </>
