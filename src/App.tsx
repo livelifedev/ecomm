@@ -1,9 +1,11 @@
+import Listings from './views/Listings';
+
 const App = () => {
   return (
     <div className="app">
-      App Index
+      <Listings />
     </div>
   );
-}
+};
 
 export default App;
