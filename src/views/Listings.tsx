@@ -18,7 +18,7 @@ const Listings = () => {
 
   return (
     <div className="listings">
-      <h1>Listings</h1>
+      <h1 className="font-bold text-4xl text-center my-16">Listings</h1>
 
       {items.map((item) => (
         <Item

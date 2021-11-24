@@ -9,9 +9,14 @@ const Item = (props: ItemType) => {
           <h4 className="text-white font-bold">${props.price.toFixed(2)}</h4>
         </div>
       </div>
-      <div className="flex-1 px-16 flex flex-col justify-center">
+      <div className="flex-1 px-16 flex flex-col justify-center relative">
         <h3 className="font-bold text-lg mb-2">{props.title}</h3>
         <p>{props.description}</p>
+        <div className="pt-6">
+          <button className="bg-blue-500 text-white font-bold px-4 py-2 rounded">
+            Add to Cart
+          </button>
+        </div>
       </div>
     </div>
   );
