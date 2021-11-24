@@ -37,6 +37,9 @@ const Nav = () => {
 
           <Link
             to="/checkout"
+            onClick={() => {
+              setShowCart(false);
+            }}
             className="text-lg font-bold py-4 absolute bottom-0 right-6"
           >
             Checkout
