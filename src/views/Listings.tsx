@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ItemType } from '../types';
-import ItemListing from '../components/ItemListing';
+import Item from '../components/Item';
 
 const Listings = () => {
   const [items, setItems] = useState([] as ItemType[]);
@@ -21,7 +21,7 @@ const Listings = () => {
       <h1>Listings</h1>
 
       {items.map((item) => (
-        <ItemListing
+        <Item
           key={item.id}
           id={item.id}
           title={item.title}

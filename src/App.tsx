@@ -5,7 +5,7 @@ import Checkout from './views/Checkout';
 
 const App = () => {
   return (
-    <div className="app">
+    <div className="container mx-auto">
       <Nav />
       <Router>
         <Routes>
