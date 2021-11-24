@@ -1,9 +1,5 @@
 const Nav = () => {
-  return (
-    <div className="nav">
-      
-    </div>
-  );
-}
+  return <div className="nav">Nav</div>;
+};
 
 export default Nav;
